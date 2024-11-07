@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <img src="IMG/LOGO.png" alt="Logo do site" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastro</h1>
+        <form id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p>Já tem login? <a href="login.html">Acesse abaixo</a></p>
+    </main>
+
+    <footer>
+        <p>© 2024 Jogos Educativos</p>
+    </footer>
+
+    <script src="src/auth/cadastro.ts"></script>
+</body>
+</html>

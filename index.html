@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Educativos</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!------------------ CONEXAO COM O BANCO DE DADOS ------------------------>
+    <script>
+        
+        const mysql = require('mysql');
+
+        const connection = mysql.createConnection({
+            host: 'localhost/xampp',
+            user: 'root',
+            password: '1234',
+            database: 'jogos_da_criancada'
+        });
+
+        
+        connection.connect(function(err) {
+            if (err) {
+                console.error('Erro ao conectar ao MySQL: ' + err.stack);
+                return;
+            }
+            console.log('Conectado ao MySQL como ID ' + connection.threadId);
+        });
+
+        // Finalizar a conexão
+        connection.end();
+    </script>
+
+
+
+    <header>
+        <img src="IMG/LOGO.png" alt="Logo do site" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#games">Jogos</a></li>
+                <li><a href="#instructions">Instruções</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#parents">Para Pais</a></li> <!-- Nova âncora no menu -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br><br>
+        <h1>
+            Sejam Bem-vindos aos Jogos da Criançada! 😁
+        </h1>
+
+        <h2>
+            Aqui, vocês iram aprender enquanto se divertem, comece a jogar agora mesmo!!
+        </h2>
+
+        <section id="games">
+            <br><br>
+            <h2>Nossos Jogos</h2>
+            <br><br><br>
+            <div class="game-list">
+                <div class="game-card">
+                    <img src="IMG/jogo da memoria.png" alt="Ícone do Jogo da Memória" class="game-image">
+                    <h3>Jogo da Memória</h3>
+                    <p>Encontre os pares de cartas iguais.</p>
+                   <a href="jogo_da_memoria.html"><button>Jogar</button></a>
+                </div>
+
+                <div class="game-card">
+                    <img src="IMG/quiz dos animais.webp" alt="Ícone do Jogo Quiz dos Animais" class="game-image">
+                    <h3>Quiz dos Animais</h3>
+                    <p>Responda perguntas sobre o reino animal!</p>
+                    <a href="quiz_dos_animais.html"><button>Jogar</button></a>
+                </div>
+                
+                <div class="game-card">
+                    <img src="IMG/som dos animais.jpg" alt="Ícone do Jogo Sons dos Animais" class="game-image">
+                    <h3>Jogo dos Sons dos Animais</h3>
+                    <p>Adivinhe o som de cada animal.</p>
+                    <a href="sons_dos_animais.html"><button>Jogar</button></a>
+                </div>
+                
+                <div class="game-card">
+                    <img src="IMG/quiz de matematica certo.jpg" alt="Ícone do Jogo Quiz Matemático" class="game-image">
+                    <h3>Quiz Matemático</h3>
+                    <p>Teste seu conhecimento no Quiz Matemático.</p>
+                    <a href="quiz_matematico.html"><button>Jogar</button></a>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <section id="instructions">
+            <h2>Instruções</h2>
+            <p>🎉 Bem-vindo aos nossos jogos educativos! 🎉</p>
+            <p>🎮 Escolha um dos jogos e divirta-se enquanto aprende! 🎨</p>
+            <p>🧩 No Jogo da Memória, encontre os pares de cartas iguais para vencer!</p>
+            <p>🐾 No Quiz dos Animais, teste seu conhecimento sobre o reino animal!</p>
+            <p>🎶 No Jogo dos Sons, adivinhe qual animal está fazendo o som!</p>
+            <p>➕➖ No Quiz Matemático, desafie suas habilidades em matemática!</p>
+            <img src="IMG/Criança-Feliz.jpg" alt="Imagem divertida" class="instruction-image">
+        </section>
+
+        <br><br><br><br><br><br>
+
+        <section id="about">
+            <h1>Sobre</h1>
+            <h2>Conheça um pouco sobre nós</h2>
+            <br><br>
+            <p>Com o intuito de gerar facilidade para as crianças de todo Brasil aprenderem, criamos o site Jogos da Criançada! <br> Onde, apenas com o acesso a internet, você consegue acessar todos os jogos, sem a necessidade de instalar.</p>
+            <p>Nosso site é dedicado a tornar o aprendizado divertido para as crianças. Com uma variedade de jogos educativos, esperamos que todos possam aprender e se divertir ao mesmo tempo!</p>
+            <img src="IMG/criançaduvida.jpg" alt="Imagem divertida" class="instruction-image">
+        </section>
+
+        <br><br><br><br><br><br>
+
+        <!-- Seção "Para Pais" -->
+        <section id="parents">
+            <h1>Para Pais</h1>
+            <img src="IMG/familia feliz.jpg" alt="Imagem divertida" class="instruction-image">
+            <h2>Entenda como garantimos a segurança e o aprendizado das crianças</h2>
+            <p>✔️Nossos jogos são totalmente seguros para as crianças. Criamos um ambiente onde não há nenhum tipo de conteúdo inadequado, garantindo uma experiência educativa e divertida.</p>
+            <p>Não há necessidade de fornecer informações pessoais e todos os jogos têm como foco o aprendizado e a diversão. Com os nossos jogos, seu filho pode explorar e aprender sem preocupações, em um ambiente controlado e seguro.</p>
+            <p>Nosso compromisso é com a educação das crianças, ajudando-as a desenvolver habilidades enquanto se divertem com jogos interativos e educativos!✔️</p>
+        </section>
+
+        <br><br><br><br><br><br>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Jogos Educativos</p>
+    </footer>
+  
+        <button id="backToTop" title="Voltar ao Topo">↑</button>
+        <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <img src="IMG/LOGO.png" alt="Logo do site" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Login</h1>
+        <form id="formLogin">
+            <label for="nomeLogin">Nome:</label>
+            <input type="text" id="nomeLogin" required>
+            <label for="idadeLogin">Idade:</label>
+            <input type="number" id="idadeLogin" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 Jogos Educativos</p>
+    </footer>
+
+    <script>
+        // Seleciona o formulário de login
+        document.getElementById('formLogin')?.addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio padrão do formulário
+            
+            // Aqui, você pode adicionar validações ou salvar dados, se necessário
+            
+            // Redireciona para a página index.html
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

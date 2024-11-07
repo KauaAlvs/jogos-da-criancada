@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/jogo_da_memoria.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Memória - Animais</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- Aqui podemos adicionar links para outros jogos -->
+        </ul>
+    </nav>
+
+    <main>
+        <p id="attempt-counter">Tentativas: 0</p> <!-- Contador de tentativas -->
+        <section id="game-container">
+            <!-- As cartas serão inseridas aqui pelo JS -->
+        </section>
+
+        <button id="reset-btn" onclick="resetGame()">Reiniciar Jogo</button>
+    </main>
+
+    <script src="JS/jogoMemoria.js"></script>
+</body>
+</html>

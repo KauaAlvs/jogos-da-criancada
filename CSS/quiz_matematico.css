@@ -1,0 +1,173 @@
+/* Estilo base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Cabeçalho e menu */
+header {
+    background-color: #16b4c9;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #0e8a9d;
+    border-radius: 4px;
+}
+
+/* Seção principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Botão de iniciar jogo */
+.start-btn {
+    background-color: #16b4c9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    display: block;
+    max-width: 200px;
+}
+
+.start-btn:hover {
+    background-color: #0e8a9d;
+}
+
+/* Contêiner do quiz */
+#quiz-container {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#quiz-container p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    background-color: #16b4c9;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.option-btn:hover {
+    background-color: #0e8a9d;
+}
+
+/* Contêiner de resultado */
+#result-container {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f8ff;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#result-content {
+    font-size: 1.3em;
+    color: #333;
+}
+
+#result-container p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #16b4c9;
+    margin: 20px 0;
+}
+
+/* Botão de reiniciar quiz */
+.restart-btn {
+    background-color: #16b4c9;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+.restart-btn:hover {
+    background-color: #0e8a9d;
+}
+
+/* Outras seções */
+#instructions, #about, #parents {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eaf2f8;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #16b4c9;
+    color: white;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "rootDir": "../",  // Defina a raiz do diretório do código
+    "outDir": "../../dist",  // Define o diretório de saída
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "**/*.ts"  // Inclui todos os arquivos TypeScript dentro dessa pasta
+  ],
+  "exclude": [
+    "dist"  // Exclui a pasta dist, onde os arquivos compilados serão gerados
+  ]
+}

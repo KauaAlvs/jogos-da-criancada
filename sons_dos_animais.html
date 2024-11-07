@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sons dos Animais</title>
+    <link rel="stylesheet" href="CSS/sons_dos_animais.css">
+    <script src="JS/sonsDosAnimais.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="IMG/LOGO.png" alt="Logo do site" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Sons dos Animais</h2>
+        <p>Ouça os sons e adivinhe qual é o animal!</p>
+        <br>
+        <button onclick="startAnimalSounds()">Iniciar Jogo</button>
+
+        <div id="game-container">
+            <p id="animal-sound"></p>
+            <button id="option1"></button>
+            <button id="option2"></button>
+            <button id="option3"></button>
+        </div>
+
+        <!-- Resultado -->
+        <div id="result-container" style="display: none;">
+            <h3>Resultados</h3>
+            <div id="result-content"></div>
+            
+        </div>
+    </main>
+    <br><br><br><br><br><br>
+    <footer>
+        <p>© 2024 Jogos Educativos</p>
+    </footer>
+</body>
+</html>
